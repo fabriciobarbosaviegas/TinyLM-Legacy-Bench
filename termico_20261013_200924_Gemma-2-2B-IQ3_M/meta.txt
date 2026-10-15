@@ -1,0 +1,22 @@
+script: bench_termico_v3.sh
+data: 2026-10-13T20:09:24-03:00
+kernel: 6.1.0-53-686-pae
+cpu: model name	: Genuine Intel(R) CPU           T2300  @ 1.66GHz
+governor: ondemand
+modelo: /home/gaia/Gemma-2-2B-IQ3_M.gguf
+modelo_stat: 1393561440 bytes; modificado em 2026-10-13 14:13:45.412750580 -0300
+threads: 2
+temperatura_ambiente_C: 24
+tdp_nominal_W: 31 (especificação Intel do T2300; confirme na ficha oficial)
+target_nucleos_C: 52  gate: applesmc:TC0H <= 47.0 C  maxwait_s: 1200  mincool_s: 60  base_s: 60
+abort_C: 95  ventoinha: automatica (SMC)
+sensores_temp: 9  ventoinhas: 1  gate_sensor: sim  throttle_disponivel: sim
+inicio_core_max_C: 52
+inicio_dissipador_C: 45.5
+gate_inicio_ok: sim
+fim_core_max_C: 51
+fim_dissipador_C: 47.0
+gate_fim_ok: sim
+sha256_leitura1: db57c76e4a23fe8b6c08436d2bb385de76ff10529cd58e9d99f2bedc8873087a
+sha256_leitura2: db57c76e4a23fe8b6c08436d2bb385de76ff10529cd58e9d99f2bedc8873087a
+hash_estavel: sim

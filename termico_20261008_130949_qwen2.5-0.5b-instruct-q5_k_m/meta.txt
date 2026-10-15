@@ -1,0 +1,22 @@
+script: bench_termico_v3.sh
+data: 2026-10-08T13:09:50-03:00
+kernel: 6.1.0-53-686-pae
+cpu: model name	: Genuine Intel(R) CPU           T2300  @ 1.66GHz
+governor: ondemand
+modelo: qwen2.5-0.5b-instruct-q5_k_m.gguf
+modelo_stat: 522186592 bytes; modificado em 2026-10-03 11:51:26.649375680 -0300
+threads: 2
+temperatura_ambiente_C: nao_informada
+tdp_nominal_W: 31 (especificação Intel do T2300; confirme na ficha oficial)
+target_nucleos_C: 52  gate: applesmc:TC0H <= 47.0 C  maxwait_s: 1200  mincool_s: 60  base_s: 60
+abort_C: 95  ventoinha: automatica (SMC)
+sensores_temp: 9  ventoinhas: 1  gate_sensor: sim  throttle_disponivel: sim
+inicio_core_max_C: 44
+inicio_dissipador_C: 40.2
+gate_inicio_ok: sim
+fim_core_max_C: 40
+fim_dissipador_C: 40.0
+gate_fim_ok: sim
+sha256_leitura1: 041474553fcabfc2a2d67903f9d2c2e50bd92528e670da4f33b5d0ce6e59fd55
+sha256_leitura2: 041474553fcabfc2a2d67903f9d2c2e50bd92528e670da4f33b5d0ce6e59fd55
+hash_estavel: sim

@@ -1,0 +1,12 @@
+data: 2026-10-08T13:18:11-03:00
+kernel: 6.1.0-53-686-pae
+cpu: model name	: Genuine Intel(R) CPU           T2300  @ 1.66GHz
+governor: ondemand
+modelo: qwen2.5-0.5b-instruct-q5_k_m.gguf
+sha256_modelo: 041474553fcabfc2a2d67903f9d2c2e50bd92528e670da4f33b5d0ce6e59fd55
+threads: 2
+temperatura_ambiente_C: nao_informada
+tdp_nominal_W: 31 (especificação Intel do T2300; confirme na ficha oficial)
+target_C: 52  maxwait_s: 900  mincool_s: 60  base_s: 60
+sensores_temp: 9  ventoinhas: 1  throttle_disponivel: sim
+inicio_max_core_C: 44

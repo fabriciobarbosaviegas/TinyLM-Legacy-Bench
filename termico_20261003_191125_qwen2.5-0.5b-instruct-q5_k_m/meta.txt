@@ -1,0 +1,9 @@
+data: 2026-10-03T19:11:25-03:00
+kernel: 6.1.0-53-686-pae
+cpu: model name	: Genuine Intel(R) CPU           T2300  @ 1.66GHz
+governor: performance
+modelo: /home/gaia/qwen2.5-0.5b-instruct-q5_k_m.gguf
+sha256_modelo: 0c9f8f784d6fd40fdd7fba5e3131ba7ff0dc76804fb64be194a3168731ab82b8
+threads: 2
+temperatura_ambiente_C: 24
+tdp_nominal_W: 31 (especificação Intel do T2300; confirme na ficha oficial)
