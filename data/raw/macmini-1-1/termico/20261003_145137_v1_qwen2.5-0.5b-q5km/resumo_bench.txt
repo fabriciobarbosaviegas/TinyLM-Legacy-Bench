@@ -1,0 +1,7 @@
+coluna                                   min     media       max
+coretemp:Core_0_C                       58,0      74,9      82,0
+coretemp:Core_1_C                       52,0      77,0      83,0
+freq_cpu0_kHz                      1666537,0 1666539,9 1666542,0
+freq_cpu1_kHz                      1666537,0 1666540,0 1666542,0
+load1                                    0,0       1,3       2,0
+throttle_count                           0,0       0,0       0,0

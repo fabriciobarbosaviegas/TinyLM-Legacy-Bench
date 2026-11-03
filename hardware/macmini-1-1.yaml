@@ -1,0 +1,34 @@
+id: macmini-1-1
+descricao: Apple Mac mini 1,1 (A1176 / EMC 2108)
+cpu:
+  modelo: Intel Core Duo T2300 (Yonah, 65 nm)
+  frequencia_nominal_ghz: 1.66
+  nucleos_fisicos: 2
+  threads: 2
+  arquitetura: i686 (32 bits, sem Intel 64)
+  simd: [sse, sse2, sse3]
+  sem_simd: [ssse3, sse4.1, sse4.2, avx, avx2, fma, f16c, bmi2]
+  cache_l2_mb: 2
+  fsb_mhz: 667
+  tdp_w: 31            # especificacao (fonte: listagem de especificacoes do T2300); nao e consumo medido
+  tjunction_c: 100     # coretemp informa crit = 100 C
+  rapl: false
+memoria:
+  ram_gb: 2            # teto da plataforma
+  tipo: DDR2-667 (2x SO-DIMM PC2-5300)
+armazenamento:
+  disco: HDD 2,5" 100 GB, SATA I, 5400 rpm
+sistema:
+  os: Debian 12 (i386)
+  kernel: 6.1.0-53-686-pae
+  governor: performance   # observado: ~1,0-1,2 GHz em repouso, 1666,5 MHz sob carga
+sensores:
+  coretemp: [Core 0, Core 1]
+  applesmc_temperaturas: [TA0P, TC0D, TC0H, TC0P, TC1P, TN0P, TN1P]   # posicao fisica nao confirmada
+  ventoinha: {nome: Master, min_rpm: 1500, max_rpm: 5500}
+  throttle_count: disponivel
+  modulos_necessarios: [coretemp, applesmc]
+potencia_medida: nenhuma
+observacoes:
+  - "Compilacao nativa inviavel (internal compiler error do GCC); usar build em conteiner (docs/01)."
+  - "Suspeita nao investigada de instabilidade de RAM/disco (ver docs/07); memtest86+ pendente."

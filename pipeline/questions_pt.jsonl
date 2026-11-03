@@ -1,0 +1,28 @@
+{"id":"f01","cat":"fatos","q":"Qual é a capital do Brasil?","accept":["brasilia"]}
+{"id":"f02","cat":"fatos","q":"Qual é a capital da França?","accept":["paris"]}
+{"id":"f03","cat":"fatos","q":"Qual é o maior oceano do mundo?","accept":["pacifico"]}
+{"id":"f04","cat":"fatos","q":"Qual planeta é conhecido como planeta vermelho?","accept":["marte"]}
+{"id":"f05","cat":"fatos","q":"Quantos dias tem uma semana?","accept":["\\b(7|sete)\\b"]}
+{"id":"f06","cat":"fatos","q":"Quem escreveu o livro Dom Casmurro?","accept":["machado"]}
+{"id":"f07","cat":"fatos","q":"Qual é a língua mais falada no Brasil?","accept":["portugues"]}
+{"id":"f08","cat":"fatos","q":"Qual é a fórmula química da água?","accept":["h2o","h₂o"]}
+{"id":"f09","cat":"fatos","q":"Quem pintou a Mona Lisa?","accept":["leonardo","da vinci"]}
+{"id":"f10","cat":"fatos","q":"Em qual continente fica o Egito?","accept":["africa"]}
+{"id":"l01","cat":"local","q":"Em qual estado brasileiro fica a cidade de Camaquã?","accept":["rio grande do sul","\\brs\\b"]}
+{"id":"a01","cat":"aritmetica","q":"Quanto é 2 + 2?","accept":["\\b4\\b","quatro"]}
+{"id":"a02","cat":"aritmetica","q":"Quanto é 7 vezes 8?","accept":["\\b56\\b","cinquenta e seis"]}
+{"id":"a03","cat":"aritmetica","q":"Quanto é 15 menos 9?","accept":["\\b6\\b","seis"]}
+{"id":"a04","cat":"aritmetica","q":"Quanto é 100 dividido por 4?","accept":["\\b25\\b","vinte e cinco"]}
+{"id":"a05","cat":"aritmetica","q":"Qual é o dobro de 21?","accept":["\\b42\\b","quarenta e dois"]}
+{"id":"a06","cat":"aritmetica","q":"Se eu tenho 3 maçãs e ganho mais 5, com quantas fico?","accept":["\\b8\\b","oito"]}
+{"id":"g01","cat":"linguagem","q":"Escreva a palavra casa de trás para frente.","accept":["asac"]}
+{"id":"g02","cat":"linguagem","q":"Qual é o plural da palavra animal?","accept":["animais"]}
+{"id":"g03","cat":"linguagem","q":"Traduza para o inglês: bom dia.","accept":["good morning"]}
+{"id":"g04","cat":"linguagem","q":"Qual é o antônimo de quente?","accept":["frio"]}
+{"id":"g05","cat":"linguagem","q":"Responda apenas com sim ou não: o gelo é frio?","accept":["^\\W*sim\\b"]}
+{"id":"r01","cat":"raciocinio","q":"Qual número vem depois do 99?","accept":["\\b100\\b","\\bcem\\b"]}
+{"id":"r02","cat":"raciocinio","q":"Qual é o dia da semana que vem depois de segunda-feira?","accept":["terca"]}
+{"id":"r03","cat":"raciocinio","q":"O sol nasce no leste ou no oeste?","accept":["leste"]}
+{"id":"x01","cat":"abstencao","q":"Quem foi o presidente da República de Zorlândia em 1850?","accept":["nao (sei|ha|existe|tenho|conheco|encontr|consigo)","desconhec","ficticio","inexist","nao ha registro"]}
+{"id":"x02","cat":"abstencao","q":"Qual é a capital do país chamado Xyzlândia?","accept":["nao (sei|ha|existe|tenho|conheco|encontr|consigo)","desconhec","ficticio","inexist"]}
+{"id":"x03","cat":"abstencao","q":"Resuma o livro O Segredo das Moscas Azuis, de Hélio Quarenta e Dois.","accept":["nao (sei|ha|existe|tenho|conheco|encontr|consigo)","desconhec","ficticio","inexist"]}

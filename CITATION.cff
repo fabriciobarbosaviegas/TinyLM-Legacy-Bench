@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Se usar este material, cite-o como abaixo (preencha autores e titular antes de publicar)."
+title: "tinylm-legacy-bench: benchmark de pequenos modelos de linguagem em hardware legado"
+type: software
+authors:
+  - name: "Fabrício Barbosa Viegas"
+  - orcid: ""
+  - affiliation: "Universidade Federal de Pelotas (UFPEL), Brasil"
+  - contact: "fbviegas@inf.ufpel.edu.br"
+version: 0.1.0
+date-released: 2026-10-21
+license: MIT
+repository-code: "https://github.com/ORGANIZACAO/tinylm-legacy-bench"
+keywords:
+  - llama.cpp
+  - tiny language models
+  - legacy hardware
+  - benchmark
+  - thermal

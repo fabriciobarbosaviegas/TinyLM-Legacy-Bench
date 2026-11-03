@@ -1,0 +1,7 @@
+nome,arquivo,quant,params_b,tamanho_bytes,sha256_publicado,fonte,licenca,status,chat,observacoes
+qwen2.5-0.5b-q5km,qwen2.5-0.5b-instruct-q5_k_m.gguf,Q5_K_M,0.5,522186592,041474553fcabfc2a2d67903f9d2c2e50bd92528e670da4f33b5d0ce6e59fd55,https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF (revisao 9217f5d),verificar,ativo,chat,Hash e tamanho do arquivo publicado na revisao 9217f5d. Ver docs/07-integridade-dos-modelos.md.
+qwen2.5-0.5b-q4_0,qwen2.5-0.5b-instruct-q4_0.gguf,Q4_0,0.5,,,https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF,verificar,candidato,chat,Preencher hash e tamanho a partir da pagina do modelo.
+qwen2.5-0.5b-q8_0,qwen2.5-0.5b-instruct-q8_0.gguf,Q8_0,0.5,,,https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF,verificar,candidato,chat,
+smollm2-360m-q8_0,smollm2-360m-instruct-q8_0.gguf,Q8_0,0.36,,,a definir,verificar,candidato,chat,
+gemma3-270m-q8_0,gemma-3-270m-it-Q8_0.gguf,Q8_0,0.27,,,a definir,verificar,candidato,chat,
+tinyllama-1.1b-q4_0,tinyllama-1.1b-chat-v1.0.Q4_0.gguf,Q4_0,1.1,,,a definir,verificar,candidato,chat,

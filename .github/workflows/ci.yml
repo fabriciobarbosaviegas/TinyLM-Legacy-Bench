@@ -1,0 +1,48 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sintaxe dos scripts de shell
+        run: |
+          for f in $(git ls-files '*.sh'); do echo "bash -n $f"; bash -n "$f"; done
+      - name: Compilação dos scripts Python
+        run: python3 -m py_compile $(git ls-files '*.py')
+      - name: ShellCheck (informativo)
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq shellcheck
+          shellcheck -S warning $(git ls-files '*.sh') || true
+
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Testes unitários
+        run: python3 -W ignore::ResourceWarning -m unittest discover -s tests -t . -v
+
+  selftest-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Autoteste do pipeline (binários e sensores simulados)
+        run: bash pipeline/selftest.sh
+
+  validate-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar dados brutos
+        run: python3 tools/validate_run.py --all --quiet data/raw
+      - name: Garantir que não há modelos nem logits versionados
+        run: |
+          if git ls-files | grep -E '\.(gguf|kld)$'; then echo "ERRO: arquivo de modelo/logits versionado"; exit 1; fi

@@ -1,0 +1,27 @@
+id: notebook-i5-1035g1
+descricao: Lenovo IdeaPad S145-15IIL (82DJ)
+cpu:
+  modelo: Intel Core i5-1035G1 (Ice Lake)
+  nucleos_fisicos: 4
+  threads: 8
+  arquitetura: x86_64
+  simd: [sse4.2, avx, avx2, fma]
+  frequencia_sob_carga_ghz: 3.3   # observado no relatorio do i5
+  tdp_w: 15            # especificacao (configuravel pelo fabricante do notebook, ~13 a 25 W); nao e consumo medido
+  tjunction_c: 100
+  rapl: true           # esperado em Ice Lake; leitura ainda nao feita neste projeto
+memoria:
+  ram_gb: 8
+gpu:
+  modelo: Intel Iris Plus Graphics G1 (integrada); nao usada nos testes (backend CPU)
+sistema:
+  os: Kubuntu 26.04.1 LTS (x86_64)
+  kernel: 7.0.0-38-generic
+  ambiente_grafico: KDE Plasma 6.6.6 (X11)
+llama_cpp:
+  build: b11370-bed0a8566
+  compilacao: "cmake -B build -DCMAKE_BUILD_TYPE=Release -DGGML_NATIVE=ON"
+potencia_medida: nenhuma
+observacoes:
+  - "Protocolo de benchmark diferente do Mac mini (pp128/tg256, -r 5, 1/2/4/8 threads)."
+  - "Rodou com ambiente grafico ativo."

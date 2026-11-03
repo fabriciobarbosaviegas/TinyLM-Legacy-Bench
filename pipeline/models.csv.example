@@ -1,0 +1,18 @@
+name,file,quant,params_b,sha256,chat
+# name: identificador sem espaços nem vírgulas (vira o nome da pasta de resultados)
+# file: caminho do .gguf (sem vírgulas)
+# quant: rótulo livre (Q4_0, Q5_K_M, Q8_0...)
+# params_b: tamanho nominal em bilhões de parâmetros (rótulo)
+# sha256: hash esperado do arquivo (opcional; vazio = só verifica estabilidade entre leituras)
+# chat: vazio/chat = /v1/chat/completions; completion = /completion (modelos sem template de chat)
+#
+# Hash publicado pela Qwen para qwen2.5-0.5b-instruct-q5_k_m.gguf (revisão 9217f5d, 522186592 bytes):
+#   041474553fcabfc2a2d67903f9d2c2e50bd92528e670da4f33b5d0ce6e59fd55
+# Se preencher a coluna sha256 com ele e o seu arquivo não conferir, o modelo é PULADO (STRICT=1).
+qwen2.5-0.5b-q5km,/home/gaia/qwen2.5-0.5b-instruct-q5_k_m.gguf,Q5_K_M,0.5,,chat
+# Exemplos (ajuste caminhos e, se quiser, preencha sha256 com o valor da página do modelo):
+#qwen2.5-0.5b-q4_0,/home/gaia/models/qwen2.5-0.5b-instruct-q4_0.gguf,Q4_0,0.5,,chat
+#qwen2.5-0.5b-q8_0,/home/gaia/models/qwen2.5-0.5b-instruct-q8_0.gguf,Q8_0,0.5,,chat
+#smollm2-360m-q8_0,/home/gaia/models/smollm2-360m-instruct-q8_0.gguf,Q8_0,0.36,,chat
+#gemma3-270m-q8_0,/home/gaia/models/gemma-3-270m-it-Q8_0.gguf,Q8_0,0.27,,chat
+#tinyllama-1.1b-q4_0,/home/gaia/models/tinyllama-1.1b-chat-v1.0.Q4_0.gguf,Q4_0,1.1,,chat
